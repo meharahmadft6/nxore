@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<browserconfig>
+    <msapplication>
+        <tile>
+            <square70x70logo src="/nxore.png"/>
+            <square150x150logo src="/nxore.png"/>
+            <wide310x150logo src="/nxore.png"/>
+            <square310x310logo src="/nxore.png"/>
+            <TileColor>#3b82f6</TileColor>
+        </tile>
+        <notification>
+            <polling-uri src="https://nxore.info/notifications/feed"/>
+            <frequency>30</frequency>
+            <cycle>1</cycle>
+        </notification>
+    </msapplication>
+</browserconfig>

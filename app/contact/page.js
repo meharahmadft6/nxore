@@ -156,8 +156,8 @@ export default function Contact() {
         <meta property="og:title" content="Contact Nxore Digital Solutions" />
         <meta property="og:description" content="Reach out to our team for cutting-edge digital solutions and services." />
         <meta property="og:type" content="website" />
-        <meta property="og:url" content="https://nxore.com/contact" />
-        <link rel="canonical" href="https://nxore.com/contact" />
+        <meta property="og:url" content="https://nxore.info/contact" />
+        <link rel="canonical" href="https://nxore.info/contact" />
       </Head>
 
       <div className="min-h-screen bg-gradient-to-b from-gray-50 to-white">
