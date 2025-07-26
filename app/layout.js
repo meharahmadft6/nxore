@@ -83,6 +83,11 @@ export const metadata = {
     "business intelligence",
   ].join(", "),
 
+  icons: {
+    icon: "/nxore.png",
+    shortcut: "/nxore.png",
+    apple: "/nxore.png",
+  },
   authors: [
     { name: "Muhammad Ahmad", url: "https://nxore.info" },
     { name: "Nxore Development Team" },
@@ -284,7 +289,7 @@ export default function RootLayout({ children }) {
           <link rel="apple-touch-icon" sizes="180x180" href="/nxore.png" />
           <link rel="mask-icon" href="/nxore.png" color="#3b82f6" />
           <link rel="shortcut icon" href="/nxore.png" />
-
+          <link rel="shortcut icon" href="/nxore.png" type="image/x-icon" />
           {/* Web App Manifest */}
           <link rel="manifest" href="/manifest.json" />
 
