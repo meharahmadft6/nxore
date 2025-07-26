@@ -49,8 +49,12 @@ html.dark body {
   animation: blobMorph 12s infinite linear alternate;
 }
 @keyframes blobMorph {
-  0% { transform: scale(1) rotate(0deg); }
-  100% { transform: scale(1.05) rotate(2deg); }
+  0% {
+    transform: scale(1) rotate(0deg);
+  }
+  100% {
+    transform: scale(1.05) rotate(2deg);
+  }
 }
 
 /* Smooth scrolling */
@@ -99,5 +103,26 @@ html {
   backdrop-filter: blur(10px);
   border: 1px solid rgba(255, 255, 255, 0.2);
 }
-.animate-blob-slow { animation: blobMorph 12s infinite linear alternate; }
-@keyframes blobMorph { 0% { transform: scale(1) rotate(0deg); } 100% { transform: scale(1.05) rotate(2deg); } } 
+.animate-blob-slow {
+  animation: blobMorph 12s infinite linear alternate;
+}
+@keyframes blobMorph {
+  0% {
+    transform: scale(1) rotate(0deg);
+  }
+  100% {
+    transform: scale(1.05) rotate(2deg);
+  }
+}
+@keyframes spin-slow {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.animate-spin-slow {
+  animation: spin-slow 10s linear infinite;
+}
