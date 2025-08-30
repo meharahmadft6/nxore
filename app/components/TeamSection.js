@@ -5,8 +5,8 @@ import { Users, Code, Video, Phone, Database, Link } from "lucide-react";
 const teamMembers = [
   {
     name: "Ahmad Khan",
-    role: "Project Manager & Client Hunter",
-    bio: "Expert in project coordination and client relationship management with 8+ years of experience in digital solutions.",
+    role: "Project Manager & Founder",
+    bio: "Expert in project coordination and client relationship management with 3+ years of experience in digital solutions.",
     skills: [
       "Project Management",
       "Client Relations",
