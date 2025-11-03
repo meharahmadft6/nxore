@@ -110,9 +110,22 @@ export default function About() {
 
   const teamMembers = [
     {
+      name: "Muhammad Ahmad Sadaqat",
+      role: "Founder & CEO | Lead Software Engineer",
+      bio: "Founder of Nxore and full-stack engineer with 3+ years of experience in the MERN stack, mobile apps, and cloud solutions. Focused on building scalable digital products and leading innovation.",
+      skills: [
+        "MERN Stack",
+        "Mobile Apps",
+        "Cloud Architecture",
+        "Team Leadership",
+      ],
+      color: "from-purple-600 to-pink-500",
+      icon: <Code className="w-6 h-6" />,
+    },
+    {
       name: "Ahmad Khan",
-      role: "Project Manager & Client Hunter",
-      bio: "Expert in project coordination and client relationship management with 8+ years of experience in digital solutions.",
+      role: "Project Manager & Business Analyst",
+      bio: "Strategic project manager with 2+ years of experience in digital solutions. Skilled in client relations, business development, and leading cross-functional teams to deliver successful outcomes.",
       skills: [
         "Project Management",
         "Client Relations",
@@ -123,17 +136,9 @@ export default function About() {
       icon: <Users className="w-6 h-6" />,
     },
     {
-      name: "Muhammad Ahmad Sadaqat",
-      role: "Software Engineer",
-      bio: "Full-stack developer specializing in MERN stack, mobile apps, and DevOps. Handles all technical aspects of projects with 5+ years of experience.",
-      skills: ["MERN Stack", "Mobile Apps", "DevOps", "Cloud Architecture"],
-      color: "from-purple-500 to-pink-500",
-      icon: <Code className="w-6 h-6" />,
-    },
-    {
       name: "Salman",
       role: "Video Editor & Content Writer",
-      bio: "Creative video editor with expertise in motion graphics, visual storytelling, and multimedia content creation for 4+ years.",
+      bio: "Creative storyteller with 2+ years of experience in video editing, motion graphics, and content creation. Focused on delivering engaging visual narratives that elevate digital branding.",
       skills: [
         "Video Editing",
         "Motion Graphics",
@@ -142,40 +147,6 @@ export default function About() {
       ],
       color: "from-green-500 to-teal-500",
       icon: <Video className="w-6 h-6" />,
-    },
-    {
-      name: "Usman Amir",
-      role: "Client Hunter",
-      bio: "Specializes in identifying and acquiring new business opportunities with a proven track record in sales and partnerships.",
-      skills: [
-        "Lead Generation",
-        "Client Relations",
-        "Business Development",
-        "Market Research",
-      ],
-      color: "from-amber-500 to-orange-500",
-      icon: <Link className="w-6 h-6" />,
-    },
-    {
-      name: "Abdul Sami",
-      role: "Data Analyst & Insights Specialist",
-      bio: "Transforms complex data into actionable insights with expertise in analytics tools and business intelligence.",
-      skills: [
-        "Data Visualization",
-        "Statistical Analysis",
-        "SQL/Python",
-        "Business Intelligence",
-      ],
-      color: "from-indigo-500 to-blue-500",
-      icon: <Database className="w-6 h-6" />,
-    },
-    {
-      name: "Muhammad Saqib",
-      role: "Blockchain Developer",
-      bio: "Builds secure decentralized applications with expertise in smart contracts and blockchain protocols.",
-      skills: ["Smart Contracts", "Solidity", "Web3.js", "Decentralized Apps"],
-      color: "from-red-500 to-pink-500",
-      icon: <Code className="w-6 h-6" />,
     },
   ];
 
