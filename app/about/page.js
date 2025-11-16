@@ -111,8 +111,8 @@ export default function About() {
   const teamMembers = [
     {
       name: "Muhammad Ahmad Sadaqat",
-      role: "Founder & CEO | Lead Software Engineer",
-      bio: "Founder of Nxore and full-stack engineer with 3+ years of experience in the MERN stack, mobile apps, and cloud solutions. Focused on building scalable digital products and leading innovation.",
+      role: " Lead Software Engineer",
+      bio: "Full-stack engineer with 3+ years of experience in the MERN stack, mobile apps, and cloud solutions. Focused on building scalable digital products and leading innovation.",
       skills: [
         "MERN Stack",
         "Mobile Apps",
@@ -124,7 +124,7 @@ export default function About() {
     },
     {
       name: "Ahmad Khan",
-      role: "Project Manager & Business Analyst",
+      role: "Founder & CEO | Project Manager",
       bio: "Strategic project manager with 2+ years of experience in digital solutions. Skilled in client relations, business development, and leading cross-functional teams to deliver successful outcomes.",
       skills: [
         "Project Management",

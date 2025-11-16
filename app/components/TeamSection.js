@@ -5,8 +5,8 @@ import { Users, Code, Video, Phone, Database, Link } from "lucide-react";
 const teamMembers = [
   {
     name: "Muhammad Ahmad Sadaqat",
-    role: "Founder & CEO | Lead Software Engineer",
-    bio: "Founder of Nxore and full-stack engineer with 5+ years of experience in the MERN stack, mobile apps, and cloud solutions. Focused on building scalable digital products and leading innovation.",
+    role: "  Lead Software Engineer",
+    bio: "Full-stack engineer with 3+ years of experience in the MERN stack, mobile apps, and cloud solutions. Focused on building scalable digital products and leading innovation.",
     skills: [
       "MERN Stack",
       "Mobile Apps",
@@ -18,13 +18,9 @@ const teamMembers = [
   },
   {
     name: "Ahmad Khan",
-<<<<<<< HEAD
-    role: "Project Manager & Founder",
-    bio: "Expert in project coordination and client relationship management with 3+ years of experience in digital solutions.",
-=======
-    role: "Project Manager & Business Analyst",
-    bio: "Expert in project coordination and client relationship management with 8+ years of experience in digital solutions.",
->>>>>>> 1ab2410 (updated on november 3)
+
+    role: "Founder & CEO | Project Manager ",
+    bio: "Strategic project manager with 2+ years of experience in digital solutions. Skilled in client relations, business development, and leading cross-functional teams to deliver successful outcomes.",
     skills: [
       "Project Management",
       "Client Relations",
