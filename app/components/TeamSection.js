@@ -4,23 +4,9 @@ import { Users, Code, Video, Phone, Database, Link } from "lucide-react";
 
 const teamMembers = [
   {
-    name: "Muhammad Ahmad Sadaqat",
-    role: "  Lead Software Engineer",
-    bio: "Full-stack engineer with 3+ years of experience in the MERN stack, mobile apps, and cloud solutions. Focused on building scalable digital products and leading innovation.",
-    skills: [
-      "MERN Stack",
-      "Mobile Apps",
-      "Cloud Architecture",
-      "Team Leadership",
-    ],
-    color: "from-purple-600 to-pink-500",
-    icon: <Code className="w-6 h-6" />,
-  },
-  {
     name: "Ahmad Khan",
-
-    role: "Founder & CEO | Project Manager ",
-    bio: "Strategic project manager with 2+ years of experience in digital solutions. Skilled in client relations, business development, and leading cross-functional teams to deliver successful outcomes.",
+    role: "Project Manager & Client Hunter",
+    bio: "Expert in project coordination and client relationship management with 8+ years of experience in digital solutions.",
     skills: [
       "Project Management",
       "Client Relations",
