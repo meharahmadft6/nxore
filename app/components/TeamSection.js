@@ -1,222 +1,201 @@
 "use client";
-import React, { useState, useEffect } from "react";
-import { Users, Code, Video, Phone, Database, Link } from "lucide-react";
-
-const teamMembers = [
-  {
-    name: "Ahmad Khan",
-    role: "Founder & CEO | Project Manager ",
-    bio: "Strategic project manager with 2+ years of experience in digital solutions. Skilled in client relations, business development, and leading cross-functional teams to deliver successful outcomes.",
-    skills: [
-      "Project Management",
-      "Client Relations",
-      "Business Development",
-      "Team Leadership",
-    ],
-    color: "from-blue-500 to-cyan-500",
-    icon: <Users className="w-6 h-6" />,
-  },
-  {
-    name: "Muhammad Ahmad Sadaqat",
-    role: "Lead Software Engineer",
-    bio: "Full-stack engineer with 3+ years of experience in the MERN stack, mobile apps, and cloud solutions. Focused on building scalable digital products and leading innovation.",
-    skills: [
-      "MERN Stack",
-      "Mobile Apps",
-      "Cloud Architecture",
-      "Team Leadership",
-    ],
-    color: "from-purple-600 to-pink-500",
-    icon: <Code className="w-6 h-6" />,
-  },
-  {
-    name: "Salman",
-    role: "Video Editor & Content Writer",
-    bio: "Creative video editor with expertise in motion graphics, visual storytelling, and multimedia content creation for 4+ years.",
-    skills: [
-      "Video Editing",
-      "Motion Graphics",
-      "Creative Design",
-      "Multimedia",
-    ],
-    color: "from-green-500 to-teal-500",
-    icon: <Video className="w-6 h-6" />,
-  },
-];
+import React, { useState } from "react";
+import {
+  Code,
+  Briefcase,
+  Award,
+  CheckCircle,
+  Linkedin,
+  Github,
+  Mail,
+} from "lucide-react";
 
 export default function TeamSection() {
-  const [hoveredMember, setHoveredMember] = useState(null);
-  const [currentIndex, setCurrentIndex] = useState(0);
-  const [visibleMembers, setVisibleMembers] = useState([]);
+  const [isHovered, setIsHovered] = useState(false);
 
-  useEffect(() => {
-    const updateVisibleMembers = () => {
-      const windowWidth = window.innerWidth;
-      let membersToShow = 3; // Default for larger screens
+  const skills = [
+    "Project Management",
+    "Client Relations",
+    "Business Development",
+    "Team Leadership",
+    "MERN Stack",
+    "Mobile App Development",
+    "Cloud Architecture",
+    "SaaS Development",
+    "System Design",
+  ];
 
-      if (windowWidth < 768) {
-        membersToShow = 1;
-      } else if (windowWidth < 1024) {
-        membersToShow = 2;
-      }
-
-      const endIndex = Math.min(
-        currentIndex + membersToShow,
-        teamMembers.length
-      );
-      let visible = teamMembers.slice(currentIndex, endIndex);
-
-      // If we're at the end, loop back to the beginning
-      if (visible.length < membersToShow) {
-        visible = [
-          ...visible,
-          ...teamMembers.slice(0, membersToShow - visible.length),
-        ];
-      }
-
-      setVisibleMembers(visible);
-    };
-
-    updateVisibleMembers();
-    window.addEventListener("resize", updateVisibleMembers);
-
-    // Auto-rotate carousel
-    const interval = setInterval(() => {
-      setCurrentIndex((prev) => (prev + 1) % teamMembers.length);
-    }, 5000);
-
-    return () => {
-      window.removeEventListener("resize", updateVisibleMembers);
-      clearInterval(interval);
-    };
-  }, [currentIndex]);
-
-  const nextSlide = () => {
-    setCurrentIndex((prev) => (prev + 1) % teamMembers.length);
-  };
-
-  const prevSlide = () => {
-    setCurrentIndex(
-      (prev) => (prev - 1 + teamMembers.length) % teamMembers.length
-    );
-  };
+  const highlights = [
+    { icon: <Award className="w-5 h-5" />, text: "3+ Years Experience" },
+    { icon: <Code className="w-5 h-5" />, text: "Full-Stack Expert" },
+    { icon: <Briefcase className="w-5 h-5" />, text: "Proven Track Record" },
+  ];
 
   return (
-    <section className="py-20 bg-white">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <section className="relative py-24 bg-gradient-to-br from-slate-50 via-blue-50 to-indigo-50 overflow-hidden">
+      {/* Background Pattern */}
+      <div className="absolute inset-0 opacity-5">
+        <div
+          className="absolute inset-0"
+          style={{
+            backgroundImage: `radial-gradient(circle at 2px 2px, #4f46e5 1px, transparent 0)`,
+            backgroundSize: "40px 40px",
+          }}
+        />
+      </div>
+
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+        {/* Section Header */}
         <div className="text-center mb-16">
-          <h2 className="text-4xl font-bold text-gray-900 mb-4">
-            Meet Our Expert Team
+          <div className="inline-block mb-4">
+            <span className="px-4 py-2 bg-indigo-100 text-indigo-700 rounded-full text-sm font-semibold tracking-wide uppercase">
+              Leadership
+            </span>
+          </div>
+          <h2 className="text-5xl md:text-6xl font-bold text-gray-900 mb-6 tracking-tight">
+            Meet the Founder
           </h2>
-          <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-            Our talented team of specialists is passionate about delivering
-            exceptional results and pushing the boundaries of what&apos;s
-            possible.
+          <p className="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
+            Visionary leader combining strategic thinking with hands-on
+            technical expertise to build innovative digital solutions
           </p>
         </div>
 
-        {/* Carousel Container */}
-        <div className="relative">
-          {/* Team Members Grid */}
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 transition-opacity duration-500">
-            {visibleMembers.map((member, index) => (
-              <div
-                key={`${member.name}-${index}`}
-                className="group relative"
-                onMouseEnter={() => setHoveredMember(index)}
-                onMouseLeave={() => setHoveredMember(null)}
-              >
-                <div className="bg-white rounded-3xl p-8 shadow-lg hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-4 border border-gray-100 h-full flex flex-col">
-                  {/* Profile Section */}
-                  <div className="text-center mb-6 flex-grow">
-                    <div className="relative inline-block mb-4">
-                      <div
-                        className={`w-24 h-24 bg-gradient-to-r ${member.color} rounded-full flex items-center justify-center text-white text-2xl font-bold shadow-lg transform group-hover:scale-110 transition-transform duration-300`}
-                      >
-                        {member.name
-                          .split(" ")
-                          .map((n) => n[0])
-                          .join("")}
-                      </div>
-                      <div className="absolute -bottom-2 -right-2 bg-white rounded-full p-2 shadow-lg">
-                        <div
-                          className={`w-8 h-8 bg-gradient-to-r ${member.color} rounded-full flex items-center justify-center text-white`}
-                        >
-                          {member.icon}
-                        </div>
-                      </div>
+        {/* Main Profile Card */}
+        <div
+          className="max-w-5xl mx-auto"
+          onMouseEnter={() => setIsHovered(true)}
+          onMouseLeave={() => setIsHovered(false)}
+        >
+          <div className="bg-white rounded-3xl shadow-2xl overflow-hidden transform transition-all duration-500 hover:shadow-3xl hover:-translate-y-2">
+            <div className="grid md:grid-cols-5 gap-0">
+              {/* Image Section */}
+              <div className="md:col-span-2 relative bg-gradient-to-br from-indigo-600 to-purple-700 p-8 flex items-center justify-center">
+                <div className="relative">
+                  {/* Decorative Circles */}
+                  <div className="absolute -top-4 -left-4 w-24 h-24 bg-white opacity-10 rounded-full blur-xl" />
+                  <div className="absolute -bottom-4 -right-4 w-32 h-32 bg-purple-300 opacity-20 rounded-full blur-2xl" />
+
+                  {/* Profile Image Container */}
+                  <div className="relative">
+                    <div
+                      className={`absolute inset-0 bg-gradient-to-tr from-indigo-400 to-purple-400 rounded-2xl blur-xl opacity-50 transform transition-transform duration-500 ${
+                        isHovered ? "scale-110" : "scale-100"
+                      }`}
+                    />
+                    <div className="relative bg-white p-2 rounded-2xl shadow-xl">
+                      <img
+                        src="/pfp.jpg"
+                        alt="Muhammad Ahmad Sadaqat"
+                        className=" object-cover rounded-xl"
+                      />
                     </div>
-                    <h3 className="text-xl font-bold text-gray-900 mb-2">
-                      {member.name}
+                  </div>
+
+                  {/* Floating Badge */}
+                  <div className="absolute -bottom-4 left-1/2 transform -translate-x-1/2">
+                    <div className="bg-white px-6 py-3 rounded-full shadow-lg flex items-center gap-2">
+                      <div className="w-6 h-3 bg-green-500 rounded-full animate-pulse" />
+                      <span className="text-xs font-semibold text-gray-700">
+                        Available for Projects
+                      </span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              {/* Content Section */}
+              <div className="md:col-span-3 p-10">
+                <div className="flex flex-col h-full">
+                  {/* Header */}
+                  <div className="mb-6">
+                    <h3 className="text-3xl font-bold text-gray-900 mb-2">
+                      Muhammad Ahmad Sadaqat
                     </h3>
-                    <p className="text-blue-600 font-semibold mb-4">
-                      {member.role}
+                    <p className="text-lg text-indigo-600 font-semibold mb-4">
+                      Founder & CEO | Lead Software Engineer
                     </p>
-                    <p className="text-gray-600 text-sm leading-relaxed mb-6">
-                      {member.bio}
+
+                    {/* Highlights */}
+                    <div className="flex flex-wrap gap-4 mb-6">
+                      {highlights.map((highlight, index) => (
+                        <div
+                          key={index}
+                          className="flex items-center gap-2 text-gray-700"
+                        >
+                          <div className="text-indigo-600">
+                            {highlight.icon}
+                          </div>
+                          <span className="text-sm font-medium">
+                            {highlight.text}
+                          </span>
+                        </div>
+                      ))}
+                    </div>
+
+                    {/* Bio */}
+                    <p className="text-gray-600 leading-relaxed mb-6">
+                      Founder-led technologist with 3+ years of experience
+                      building scalable digital products. Combines strategic
+                      leadership, project management, and hands-on full-stack
+                      engineering to deliver high-impact web, mobile, and
+                      cloud-based solutions for startups and growing businesses.
                     </p>
                   </div>
-                  {/* Skills Section */}
-                  <div className="space-y-3">
-                    <h4 className="text-sm font-semibold text-gray-700 uppercase tracking-wide">
-                      Expertise
+
+                  {/* Skills */}
+                  <div className="mb-6">
+                    <h4 className="text-sm font-bold text-gray-900 uppercase tracking-wider mb-4 flex items-center gap-2">
+                      <CheckCircle className="w-4 h-4 text-indigo-600" />
+                      Core Expertise
                     </h4>
                     <div className="flex flex-wrap gap-2">
-                      {member.skills.map((skill, skillIndex) => (
+                      {skills.map((skill, index) => (
                         <span
-                          key={skillIndex}
-                          className={`px-3 py-1 text-xs font-medium rounded-full bg-gradient-to-r ${member.color} text-white shadow-sm transform hover:scale-105 transition-transform duration-200`}
+                          key={index}
+                          className="px-4 py-2 bg-gradient-to-r from-indigo-50 to-purple-50 text-indigo-700 rounded-lg text-sm font-medium border border-indigo-100 hover:border-indigo-300 hover:shadow-md transition-all duration-200 cursor-default"
                         >
                           {skill}
                         </span>
                       ))}
                     </div>
                   </div>
-                  {/* Hover Effect Overlay */}
-                  <div
-                    className={`absolute inset-0 bg-gradient-to-r ${member.color} opacity-0 group-hover:opacity-5 rounded-3xl transition-opacity duration-300`}
-                  />
-                </div>
-                {/* Floating Action Button */}
-                <div
-                  className={`absolute top-4 right-4 w-12 h-12 bg-gradient-to-r ${
-                    member.color
-                  } rounded-full flex items-center justify-center text-white shadow-lg transform transition-all duration-300 ${
-                    hoveredMember === index
-                      ? "scale-100 opacity-100"
-                      : "scale-0 opacity-0"
-                  }`}
-                >
-                  <Phone className="w-5 h-5" />
-                </div>
-              </div>
-            ))}
-          </div>
-        </div>
 
-        {/* Team Stats */}
-        <div className="mt-16 bg-gradient-to-r from-blue-600 to-purple-600 rounded-3xl p-8 text-white">
-          <div className="text-center mb-8">
-            <h3 className="text-2xl font-bold mb-2">Why Choose Our Team?</h3>
-            <p className="text-blue-100">
-              We combine expertise, creativity, and dedication to deliver
-              outstanding results
-            </p>
-          </div>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            <div className="text-center">
-              <div className="text-3xl font-bold mb-2">10+</div>
-              <div className="text-blue-100">Combined Years of Experience</div>
-            </div>
-            <div className="text-center">
-              <div className="text-3xl font-bold mb-2">24/7</div>
-              <div className="text-blue-100">Support &amp; Availability</div>
-            </div>
-            <div className="text-center">
-              <div className="text-3xl font-bold mb-2">
-                {teamMembers.length}
+                  {/* Social Links */}
+                  <div className="mt-auto pt-6 border-t border-gray-100">
+                    <div className="flex gap-3">
+                      {/* Email */}
+                      <a
+                        href="mailto:meharahmad.ft6@gmail.com"
+                        className="flex-1 bg-gradient-to-r from-indigo-600 to-purple-600 text-white px-6 py-3 rounded-xl font-semibold hover:shadow-lg transform hover:-translate-y-1 transition-all duration-200 flex items-center justify-center gap-2"
+                      >
+                        <Mail className="w-5 h-5" />
+                        Get in Touch
+                      </a>
+
+                      {/* LinkedIn */}
+                      <a
+                        href="https://www.linkedin.com/in/muhammad-ahmad-sadaqat-5a893730b/"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="bg-gray-100 text-gray-700 p-3 rounded-xl hover:bg-gray-200 transform hover:-translate-y-1 transition-all duration-200"
+                      >
+                        <Linkedin className="w-5 h-5" />
+                      </a>
+
+                      {/* GitHub */}
+                      <a
+                        href="https://github.com/meharahmadft6"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="bg-gray-100 text-gray-700 p-3 rounded-xl hover:bg-gray-200 transform hover:-translate-y-1 transition-all duration-200"
+                      >
+                        <Github className="w-5 h-5" />
+                      </a>
+                    </div>
+                  </div>
+                </div>
               </div>
-              <div className="text-blue-100">Specialized Experts</div>
             </div>
           </div>
         </div>

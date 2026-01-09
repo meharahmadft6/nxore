@@ -14,11 +14,11 @@ import {
   Award,
   TrendingUp,
   Globe,
-  Link,
   Database,
   Star,
 } from "lucide-react";
 import FloatingWhatsAppButton from "../components/FloatingWhatsAppButton";
+import TeamSection from "../components/TeamSection";
 
 // Floating particles animation
 const FloatingParticles = () => {
@@ -106,49 +106,6 @@ const useScrollReveal = () => {
 
 export default function About() {
   const [activeTab, setActiveTab] = useState("mission");
-  const [hoveredMember, setHoveredMember] = useState(null);
-
-  const teamMembers = [
-    {
-      name: "Muhammad Ahmad Sadaqat",
-      role: "Lead Software Engineer",
-      bio: "Full-stack engineer with 3+ years of experience in the MERN stack, mobile apps, and cloud solutions. Focused on building scalable digital products and leading innovation.",
-      skills: [
-        "MERN Stack",
-        "Mobile Apps",
-        "Cloud Architecture",
-        "Team Leadership",
-      ],
-      color: "from-purple-600 to-pink-500",
-      icon: <Code className="w-6 h-6" />,
-    },
-    {
-      name: "Ahmad Khan",
-      role: "Founder & CEO | Project Manager",
-      bio: "Strategic project manager with 2+ years of experience in digital solutions. Skilled in client relations, business development, and leading cross-functional teams to deliver successful outcomes",
-      skills: [
-        "Project Management",
-        "Client Relations",
-        "Business Development",
-        "Team Leadership",
-      ],
-      color: "from-blue-500 to-cyan-500",
-      icon: <Users className="w-6 h-6" />,
-    },
-    {
-      name: "Salman",
-      role: "Video Editor & Content Writer",
-      bio: "Creative storyteller with 2+ years of experience in video editing, motion graphics, and content creation. Focused on delivering engaging visual narratives that elevate digital branding.",
-      skills: [
-        "Video Editing",
-        "Motion Graphics",
-        "Creative Design",
-        "Multimedia",
-      ],
-      color: "from-green-500 to-teal-500",
-      icon: <Video className="w-6 h-6" />,
-    },
-  ];
 
   const stats = [
     {
@@ -206,23 +163,139 @@ export default function About() {
 
   return (
     <>
-      {/* SEO Meta Tags */}
+      {/* Enhanced SEO Meta Tags with Muhammad Ahmad Sadaqat focus */}
       <div style={{ display: "none" }}>
-        <h1>About Nxore - Leading Digital Solutions Company</h1>
+        <h1>
+          About Nxore - Led by Muhammad Ahmad Sadaqat | Digital Solutions
+          Company
+        </h1>
         <meta
           name="description"
-          content="Discover Nxore's expert team of developers, project managers, and creative professionals. We deliver innovative digital solutions including web development, mobile apps, and video production."
+          content="Nxore is a leading digital solutions company founded and led by Muhammad Ahmad Sadaqat. We specialize in web development, mobile apps, and video production with 3+ years of expertise in MERN stack, cloud solutions, and digital transformation."
         />
         <meta
           name="keywords"
-          content="Nxore, digital solutions, web development, mobile apps, MERN stack, video editing, project management, DevOps"
+          content="Muhammad Ahmad Sadaqat, Nxore, digital solutions, web development, mobile apps, MERN stack, full-stack developer, cloud solutions, SaaS development, project management, video editing, Ahmad Khan, Salman"
         />
+        <meta name="author" content="Muhammad Ahmad Sadaqat" />
+        <meta
+          property="og:title"
+          content="Muhammad Ahmad Sadaqat - Founder & Lead Engineer at Nxore"
+        />
+        <meta
+          property="og:description"
+          content="Meet Muhammad Ahmad Sadaqat, Founder & CEO of Nxore. Full-stack engineer with 3+ years of experience in MERN stack, mobile apps, and cloud solutions."
+        />
+        <meta property="og:type" content="website" />
+        <meta property="article:author" content="Muhammad Ahmad Sadaqat" />
+        <meta
+          name="twitter:title"
+          content="Muhammad Ahmad Sadaqat - Digital Solutions Expert"
+        />
+        <meta
+          name="twitter:description"
+          content="Founder & Lead Software Engineer at Nxore, specializing in cutting-edge digital solutions and innovation."
+        />
+        <link rel="canonical" href="https://nxore.com/about" />
+        <script type="application/ld+json">
+          {JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "Organization",
+            name: "Nxore",
+            url: "https://nxore.com",
+            logo: "https://nxore.com/logo.png",
+            founder: {
+              "@type": "Person",
+              name: "Muhammad Ahmad Sadaqat",
+              jobTitle: "Founder & CEO | Lead Software Engineer",
+              url: "https://nxore.com/about",
+              sameAs: [
+                "https://www.linkedin.com/in/muhammad-ahmad-sadaqat-5a893730b/",
+                "https://github.com/meharahmadft6",
+              ],
+              knowsAbout: [
+                "MERN Stack",
+                "Mobile App Development",
+                "Cloud Architecture",
+                "Project Management",
+                "SaaS Development",
+              ],
+              hasOccupation: {
+                "@type": "Occupation",
+                name: "Software Engineer",
+                yearsOfExperience: "3",
+              },
+            },
+            employee: [
+              {
+                "@type": "Person",
+                name: "Ahmad Khan",
+                jobTitle: "Project Manager",
+              },
+              {
+                "@type": "Person",
+                name: "Salman",
+                jobTitle: "Video Editor & Content Writer",
+              },
+            ],
+            description:
+              "Nxore provides cutting-edge digital solutions including web development, mobile apps, and video production.",
+            foundingDate: "2022",
+            address: {
+              "@type": "PostalAddress",
+              addressCountry: "PK",
+            },
+          })}
+        </script>
+        <script type="application/ld+json">
+          {JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "Person",
+            name: "Muhammad Ahmad Sadaqat",
+            url: "https://nxore.com/about",
+            image: "https://nxore.com/pfp.jpg",
+            jobTitle: "Founder & CEO | Lead Software Engineer",
+            worksFor: {
+              "@type": "Organization",
+              name: "Nxore",
+            },
+            description:
+              "Full-stack engineer with 3+ years of experience in MERN stack, mobile apps, and cloud solutions. Founder and lead developer at Nxore.",
+            knowsAbout: [
+              "MERN Stack Development",
+              "React Native",
+              "Node.js",
+              "MongoDB",
+              "Express.js",
+              "Cloud Computing",
+              "System Design",
+              "Project Management",
+              "Team Leadership",
+              "Digital Transformation",
+            ],
+            email: "mailto:meharahmad.ft6@gmail.com",
+            sameAs: [
+              "https://www.linkedin.com/in/muhammad-ahmad-sadaqat-5a893730b/",
+              "https://github.com/meharahmadft6",
+            ],
+            hasCredential: [
+              {
+                "@type": "EducationalOccupationalCredential",
+                credentialCategory: "Professional Certificate",
+                recognizedBy: {
+                  "@type": "Organization",
+                  name: "Industry Experience",
+                },
+              },
+            ],
+          })}
+        </script>
       </div>
 
       <div className="min-h-screen bg-white">
         <Navbar />
 
-        {/* Hero Section with Advanced Animations */}
+        {/* Hero Section with Enhanced SEO Keywords */}
         <section className="relative pt-32 pb-20 bg-gradient-to-br from-slate-50 via-blue-50 to-purple-50 overflow-hidden">
           <FloatingParticles />
           <div className="absolute inset-0 bg-[radial-gradient(circle_at_50%_50%,rgba(59,130,246,0.1),transparent_70%)]" />
@@ -240,35 +313,41 @@ export default function About() {
                   </span>
                 </h1>
                 <p className="text-xl sm:text-2xl text-gray-600 max-w-4xl mx-auto leading-relaxed mb-12 animate-fade-in-up animation-delay-200">
-                  We are a passionate team of digital innovators dedicated to
-                  transforming businesses through
+                  Led by{" "}
                   <span className="text-blue-600 font-semibold">
-                    {" "}
+                    Muhammad Ahmad Sadaqat
+                  </span>
+                  , we are a passionate team of digital innovators dedicated to
+                  transforming businesses through{" "}
+                  <span className="text-blue-600 font-semibold">
                     cutting-edge technology
                   </span>{" "}
-                  and
+                  and{" "}
                   <span className="text-purple-600 font-semibold">
-                    {" "}
                     creative solutions
                   </span>
-                  .
+                  . With expertise in{" "}
+                  <span className="font-semibold">MERN stack</span>,{" "}
+                  <span className="font-semibold">mobile apps</span>, and{" "}
+                  <span className="font-semibold">cloud solutions</span>.
                 </p>
               </div>
 
               <div className="flex justify-center animate-fade-in-up animation-delay-400">
                 <div className="flex items-center space-x-4 bg-white/70 backdrop-blur-sm rounded-full px-8 py-4 shadow-lg">
                   <div className="flex -space-x-2">
-                    {teamMembers.map((member, idx) => (
-                      <div
-                        key={idx}
-                        className={`w-10 h-10 rounded-full bg-gradient-to-r ${member.color} border-2 border-white flex items-center justify-center text-white font-bold text-sm`}
-                      >
-                        {member.name.charAt(0)}
-                      </div>
-                    ))}
+                    <div className="w-10 h-10 rounded-full bg-gradient-to-r from-purple-600 to-pink-500 border-2 border-white flex items-center justify-center text-white font-bold text-sm">
+                      M
+                    </div>
+                    <div className="w-10 h-10 rounded-full bg-gradient-to-r from-blue-500 to-cyan-500 border-2 border-white flex items-center justify-center text-white font-bold text-sm">
+                      A
+                    </div>
+                    <div className="w-10 h-10 rounded-full bg-gradient-to-r from-green-500 to-teal-500 border-2 border-white flex items-center justify-center text-white font-bold text-sm">
+                      S
+                    </div>
                   </div>
                   <span className="text-gray-600 font-medium">
-                    Meet our amazing team
+                    Expert Team Led by Muhammad Ahmad Sadaqat
                   </span>
                   <ChevronDown className="w-5 h-5 text-gray-400 animate-bounce" />
                 </div>
@@ -277,16 +356,17 @@ export default function About() {
           </div>
         </section>
 
-        {/* Mission & Vision with Tabs */}
+        {/* Mission & Vision with Tabs - Enhanced with Founder's Vision */}
         <section className="py-20 bg-white">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="text-center mb-16">
               <h2 className="text-4xl font-bold text-gray-900 mb-4">
-                Our Purpose
+                Our Vision & Mission
               </h2>
               <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-                Driven by passion, guided by purpose, committed to excellence in
-                everything we do.
+                Driven by the leadership of{" "}
+                <strong>Muhammad Ahmad Sadaqat</strong>, we are committed to
+                excellence in digital innovation and client success.
               </p>
             </div>
 
@@ -320,14 +400,15 @@ export default function About() {
                         Our Mission
                       </h3>
                       <p className="text-lg text-gray-600 mb-6 leading-relaxed">
-                        To empower businesses with innovative digital solutions
-                        that drive growth, enhance user experiences, and create
-                        lasting impact in the digital landscape.
+                        Founded by <strong>Muhammad Ahmad Sadaqat</strong>, our
+                        mission is to empower businesses with innovative digital
+                        solutions that drive growth, enhance user experiences,
+                        and create lasting impact in the digital landscape.
                       </p>
                       <p className="text-lg text-gray-600 leading-relaxed">
-                        We believe that every business deserves access to
-                        world-class digital tools and expertise, regardless of
-                        their size or industry.
+                        We leverage cutting-edge technologies including MERN
+                        stack, cloud solutions, and mobile development to
+                        deliver exceptional results for our clients.
                       </p>
                     </div>
                     <div className="relative">
@@ -337,11 +418,12 @@ export default function About() {
                         <div className="relative z-10">
                           <Globe className="w-12 h-12 mb-4" />
                           <h4 className="text-2xl font-bold mb-4">
-                            Global Impact
+                            Technical Excellence
                           </h4>
                           <p className="text-lg leading-relaxed">
-                            Transforming businesses across the globe with
-                            cutting-edge digital solutions.
+                            Led by Muhammad Ahmad Sadaqat, we deliver
+                            world-class MERN stack solutions, mobile apps, and
+                            cloud architectures.
                           </p>
                         </div>
                       </div>
@@ -357,14 +439,16 @@ export default function About() {
                         Our Vision
                       </h3>
                       <p className="text-lg text-gray-600 mb-6 leading-relaxed">
-                        To be the leading digital partner for businesses
-                        worldwide, known for our innovative solutions,
-                        exceptional service, and commitment to client success.
+                        Under the leadership of{" "}
+                        <strong>Muhammad Ahmad Sadaqat</strong>, we aim to be
+                        the leading digital partner for businesses worldwide,
+                        known for our innovative solutions, exceptional service,
+                        and commitment to client success.
                       </p>
                       <p className="text-lg text-gray-600 leading-relaxed">
                         We envision a future where technology seamlessly
                         integrates with business needs to create extraordinary
-                        digital experiences.
+                        digital experiences powered by our expertise.
                       </p>
                     </div>
                     <div className="relative">
@@ -374,11 +458,12 @@ export default function About() {
                         <div className="relative z-10">
                           <TrendingUp className="w-12 h-12 mb-4" />
                           <h4 className="text-2xl font-bold mb-4">
-                            Future Forward
+                            Founder&apos;s Vision
                           </h4>
                           <p className="text-lg leading-relaxed">
-                            Leading the digital transformation revolution with
-                            innovative solutions.
+                            Muhammad Ahmad Sadaqat&apos;s vision: Democratizing
+                            access to premium digital solutions for businesses
+                            of all sizes.
                           </p>
                         </div>
                       </div>
@@ -415,15 +500,16 @@ export default function About() {
           </div>
         </section>
 
-        {/* Enhanced Stats Section */}
+        {/* Enhanced Stats Section with Founder's Impact */}
         <section className="py-20 bg-gradient-to-r from-gray-50 to-blue-50">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="text-center mb-12">
               <h2 className="text-4xl font-bold text-gray-900 mb-4">
-                Our Impact
+                Our Impact & Achievements
               </h2>
               <p className="text-xl text-gray-600">
-                Numbers that speak for our dedication and success
+                Led by <strong>Muhammad Ahmad Sadaqat</strong>, we&apos;ve
+                delivered exceptional results across 50+ projects
               </p>
             </div>
 
@@ -452,160 +538,129 @@ export default function About() {
                 </div>
               ))}
             </div>
-          </div>
-        </section>
 
-        {/* Premium Team Section */}
-        <section className="py-20 bg-white">
-          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div className="text-center mb-16">
-              <h2 className="text-4xl font-bold text-gray-900 mb-4">
-                Meet Our Expert Team
-              </h2>
-              <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-                Our talented team of specialists is passionate about delivering
-                exceptional results and pushing the boundaries of what&apos;s
-                possible.
-              </p>
-            </div>
-
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-              {teamMembers.map((member, index) => (
-                <div
-                  key={index}
-                  className="group relative"
-                  onMouseEnter={() => setHoveredMember(index)}
-                  onMouseLeave={() => setHoveredMember(null)}
-                >
-                  <div className="bg-white rounded-3xl p-8 shadow-lg hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-4 border border-gray-100">
-                    {/* Profile Section */}
-                    <div className="text-center mb-6">
-                      <div className="relative inline-block mb-4">
-                        <div
-                          className={`w-24 h-24 bg-gradient-to-r ${member.color} rounded-full flex items-center justify-center text-white text-2xl font-bold shadow-lg transform group-hover:scale-110 transition-transform duration-300`}
-                        >
-                          {member.name
-                            .split(" ")
-                            .map((n) => n[0])
-                            .join("")}
-                        </div>
-                        <div className="absolute -bottom-2 -right-2 bg-white rounded-full p-2 shadow-lg">
-                          <div
-                            className={`w-8 h-8 bg-gradient-to-r ${member.color} rounded-full flex items-center justify-center text-white`}
-                          >
-                            {member.icon}
-                          </div>
-                        </div>
-                      </div>
-
-                      <h3 className="text-xl font-bold text-gray-900 mb-2">
-                        {member.name}
-                      </h3>
-                      <p className="text-blue-600 font-semibold mb-4">
-                        {member.role}
-                      </p>
-                      <p className="text-gray-600 text-sm leading-relaxed mb-6">
-                        {member.bio}
-                      </p>
-                    </div>
-
-                    {/* Skills Section */}
-                    <div className="space-y-3">
-                      <h4 className="text-sm font-semibold text-gray-700 uppercase tracking-wide">
-                        Expertise
-                      </h4>
-                      <div className="flex flex-wrap gap-2">
-                        {member.skills.map((skill, skillIndex) => (
-                          <span
-                            key={skillIndex}
-                            className={`px-3 py-1 text-xs font-medium rounded-full bg-gradient-to-r ${member.color} text-white shadow-sm transform hover:scale-105 transition-transform duration-200`}
-                          >
-                            {skill}
-                          </span>
-                        ))}
-                      </div>
-                    </div>
-
-                    {/* Hover Effect Overlay */}
-                    <div
-                      className={`absolute inset-0 bg-gradient-to-r ${member.color} opacity-0 group-hover:opacity-5 rounded-3xl transition-opacity duration-300`}
-                    />
-                  </div>
-
-                  {/* Floating Action Button */}
-                  <div
-                    className={`absolute top-4 right-4 w-12 h-12 bg-gradient-to-r ${
-                      member.color
-                    } rounded-full flex items-center justify-center text-white shadow-lg transform transition-all duration-300 ${
-                      hoveredMember === index
-                        ? "scale-100 opacity-100"
-                        : "scale-0 opacity-0"
-                    }`}
-                  >
-                    <Phone className="w-5 h-5" />
-                  </div>
-                </div>
-              ))}
-            </div>
-
-            {/* Team Stats */}
-            <div className="mt-16 bg-gradient-to-r from-blue-600 to-purple-600 rounded-3xl p-8 text-white">
-              <div className="text-center mb-8">
-                <h3 className="text-2xl font-bold mb-2">
-                  Why Choose Our Team?
+            {/* Founder's Personal Stats */}
+            <div className="mt-12 bg-white rounded-2xl p-8 shadow-lg">
+              <div className="text-center mb-6">
+                <h3 className="text-2xl font-bold text-gray-900 mb-2">
+                  Muhammad Ahmad Sadaqat&apos;s Personal Metrics
                 </h3>
-                <p className="text-blue-100">
-                  We combine expertise, creativity, and dedication to deliver
-                  outstanding results
+                <p className="text-gray-600">
+                  Direct contributions to our success
                 </p>
               </div>
-
-              <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+              <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
                 <div className="text-center">
-                  <div className="text-3xl font-bold mb-2">10+</div>
-                  <div className="text-blue-100">
-                    Combined Years of Experience
+                  <div className="text-3xl font-bold text-blue-600 mb-2">
+                    3+
+                  </div>
+                  <div className="text-gray-700 font-medium">
+                    Years Tech Experience
                   </div>
                 </div>
                 <div className="text-center">
-                  <div className="text-3xl font-bold mb-2">24/7</div>
-                  <div className="text-blue-100">Support & Availability</div>
+                  <div className="text-3xl font-bold text-blue-600 mb-2">
+                    100%
+                  </div>
+                  <div className="text-gray-700 font-medium">
+                    Hands-on Projects
+                  </div>
                 </div>
                 <div className="text-center">
-                  <div className="text-3xl font-bold mb-2">3</div>
-                  <div className="text-blue-100">Specialized Experts</div>
+                  <div className="text-3xl font-bold text-blue-600 mb-2">
+                    MERN
+                  </div>
+                  <div className="text-gray-700 font-medium">
+                    Stack Specialist
+                  </div>
+                </div>
+                <div className="text-center">
+                  <div className="text-3xl font-bold text-blue-600 mb-2">
+                    24/7
+                  </div>
+                  <div className="text-gray-700 font-medium">
+                    Code & Leadership
+                  </div>
                 </div>
               </div>
             </div>
           </div>
         </section>
 
-        {/* Call to Action */}
+        {/* Replaced Team Section with the provided TeamSection component */}
+        <TeamSection />
+
+        {/* Call to Action with Enhanced SEO */}
         <section className="py-20 bg-gradient-to-r from-blue-600 to-purple-600">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
             <h2 className="text-4xl font-bold text-white mb-6">
-              Ready to Start Your Project?
+              Work Directly with Muhammad Ahmad Sadaqat
             </h2>
             <p className="text-xl text-blue-100 mb-8 max-w-3xl mx-auto">
-              Let&apos;s collaborate and bring your digital vision to life with
-              our expert team and cutting-edge solutions.
+              Get personalized attention from our founder and lead engineer.
+              Let&apos;s collaborate to bring your digital vision to life with
+              cutting-edge MERN stack solutions, mobile apps, and cloud
+              architectures.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <a
-                href="/contact"
+                href="mailto:meharahmad.ft6@gmail.com"
                 className="bg-white text-blue-600 px-8 py-4 rounded-full font-semibold hover:bg-blue-50 transition-colors duration-300 shadow-lg"
               >
-                Start Your Project
+                Email Muhammad Ahmad Sadaqat
               </a>
               <a
                 href="/contact"
                 className="border-2 border-white text-white px-8 py-4 rounded-full font-semibold hover:bg-white hover:text-blue-600 transition-colors duration-300"
               >
-                Schedule a Call
+                Schedule a Technical Call
               </a>
+            </div>
+            <div className="mt-6 text-blue-100 text-sm">
+              <p>
+                Founder&apos;s Direct Line: Connect with Muhammad Ahmad Sadaqat
+                for premium digital solutions
+              </p>
             </div>
           </div>
         </section>
+
+        {/* Additional SEO Content (Hidden but crawlable) */}
+        <div style={{ display: "none" }}>
+          <h2>Muhammad Ahmad Sadaqat - Digital Solutions Expert</h2>
+          <p>
+            Muhammad Ahmad Sadaqat is the founder and lead software engineer at
+            Nxore, specializing in MERN stack development, mobile applications,
+            and cloud solutions. With over 3 years of hands-on experience, he
+            leads a team of experts delivering premium digital solutions to
+            businesses worldwide.
+          </p>
+          <h3>Technical Expertise of Muhammad Ahmad Sadaqat</h3>
+          <ul>
+            <li>MERN Stack Development (MongoDB, Express, React, Node.js)</li>
+            <li>React Native Mobile App Development</li>
+            <li>Cloud Architecture & Deployment</li>
+            <li>SaaS Product Development</li>
+            <li>System Design & Scalability</li>
+            <li>Project Management & Team Leadership</li>
+            <li>API Development & Integration</li>
+            <li>Database Design & Optimization</li>
+          </ul>
+          <h3>Nxore Services Under Muhammad Ahmad Sadaqat&apos;s Leadership</h3>
+          <p>
+            Nxore, led by Muhammad Ahmad Sadaqat, provides comprehensive digital
+            solutions including custom web applications, mobile apps, e-commerce
+            platforms, cloud solutions, and technical consulting. Our team
+            combines technical excellence with creative problem-solving to
+            deliver outstanding results.
+          </p>
+          <h3>Contact Muhammad Ahmad Sadaqat</h3>
+          <p>
+            For premium digital solutions, contact Muhammad Ahmad Sadaqat
+            directly at meharahmad.ft6@gmail.com or through our contact form.
+            Get expert guidance on your next digital project.
+          </p>
+        </div>
 
         <Footer />
         <FloatingWhatsAppButton />
