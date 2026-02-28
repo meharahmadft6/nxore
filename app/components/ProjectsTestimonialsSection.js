@@ -177,7 +177,7 @@ export default function ProjectsTestimonialsSection() {
       company: "Nxore",
       rating: 5,
       text: "Ahmad is a brilliant developer who understands both technical excellence and business needs. He helped establish Nxore's online presence with a stunning, functional platform. His full-stack expertise and commitment to quality are unmatched.",
-      image: "/a.png",
+      image: "/ahmad2.png",
       gradient: "from-emerald-500 to-teal-600",
     },
   ];
