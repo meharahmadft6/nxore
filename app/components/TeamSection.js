@@ -85,8 +85,8 @@ export default function TeamSection() {
                     />
                     <div className="relative bg-white p-2 rounded-2xl shadow-xl">
                       <img
-                        src="/pfp.jpg"
-                        alt="Muhammad Ahmad Sadaqat"
+                        src="/a.png"
+                        alt="Ahmad Khan"
                         className=" object-cover rounded-xl"
                       />
                     </div>
@@ -110,7 +110,7 @@ export default function TeamSection() {
                   {/* Header */}
                   <div className="mb-6">
                     <h3 className="text-3xl font-bold text-gray-900 mb-2">
-                      Muhammad Ahmad Sadaqat
+                      Ahmad Khan
                     </h3>
                     <p className="text-lg text-indigo-600 font-semibold mb-4">
                       Founder & CEO | Lead Software Engineer
@@ -166,7 +166,7 @@ export default function TeamSection() {
                     <div className="flex gap-3">
                       {/* Email */}
                       <a
-                        href="mailto:meharahmad.ft6@gmail.com"
+                        href="mailto:ahmadkhan48646@gmail.com"
                         className="flex-1 bg-gradient-to-r from-indigo-600 to-purple-600 text-white px-6 py-3 rounded-xl font-semibold hover:shadow-lg transform hover:-translate-y-1 transition-all duration-200 flex items-center justify-center gap-2"
                       >
                         <Mail className="w-5 h-5" />
@@ -175,7 +175,7 @@ export default function TeamSection() {
 
                       {/* LinkedIn */}
                       <a
-                        href="https://www.linkedin.com/in/muhammad-ahmad-sadaqat-5a893730b/"
+                        href="https://www.linkedin.com/in/48646-ahmad-khan/"
                         target="_blank"
                         rel="noopener noreferrer"
                         className="bg-gray-100 text-gray-700 p-3 rounded-xl hover:bg-gray-200 transform hover:-translate-y-1 transition-all duration-200"
@@ -183,7 +183,7 @@ export default function TeamSection() {
                         <Linkedin className="w-5 h-5" />
                       </a>
 
-                      {/* GitHub */}
+                      {/* GitHub
                       <a
                         href="https://github.com/meharahmadft6"
                         target="_blank"
@@ -191,7 +191,7 @@ export default function TeamSection() {
                         className="bg-gray-100 text-gray-700 p-3 rounded-xl hover:bg-gray-200 transform hover:-translate-y-1 transition-all duration-200"
                       >
                         <Github className="w-5 h-5" />
-                      </a>
+                      </a> */}
                     </div>
                   </div>
                 </div>

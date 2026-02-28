@@ -77,8 +77,8 @@ export default function Contact() {
         </svg>
       ),
       title: "Email",
-      details: ["meharahmad.ft6@gmail.com", "nxore.digitalsolutions@gmail.com"],
-      link: "mailto:meharahmad.ft6@gmail.com"
+      details: ["ahmadkhan48646@gmail.com", "nxore.digitalsolutions@gmail.com"],
+      link: "mailto:ahmadkhan48646@gmail.com"
     },
     {
       icon: (

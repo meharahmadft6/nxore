@@ -172,12 +172,12 @@ export default function ProjectsTestimonialsSection() {
     },
     {
       id: 6,
-      name: "Muhammad Ahmad",
+      name: "Ahmad Khan",
       role: "CEO, Nxore",
       company: "Nxore",
       rating: 5,
       text: "Ahmad is a brilliant developer who understands both technical excellence and business needs. He helped establish Nxore's online presence with a stunning, functional platform. His full-stack expertise and commitment to quality are unmatched.",
-      image: "/4.jpg",
+      image: "/a.png",
       gradient: "from-emerald-500 to-teal-600",
     },
   ];
@@ -188,7 +188,7 @@ export default function ProjectsTestimonialsSection() {
 
   const prevTestimonial = () => {
     setCurrentTestimonial(
-      (prev) => (prev - 1 + testimonials.length) % testimonials.length
+      (prev) => (prev - 1 + testimonials.length) % testimonials.length,
     );
   };
 
@@ -395,7 +395,7 @@ export default function ProjectsTestimonialsSection() {
                         key={i}
                         className="w-5 h-5 fill-yellow-400 text-yellow-400"
                       />
-                    )
+                    ),
                   )}
                 </div>
 
