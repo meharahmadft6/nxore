@@ -86,7 +86,7 @@ export default function TeamSection() {
                     <div className="relative bg-white p-2 rounded-2xl shadow-xl">
                       <img
                         src="/a.png"
-                        alt="Ahmad Khan"
+                        alt="Ahmad Khan PFP"
                         className=" object-cover rounded-xl"
                       />
                     </div>
