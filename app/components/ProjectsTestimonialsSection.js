@@ -172,12 +172,12 @@ export default function ProjectsTestimonialsSection() {
     },
     {
       id: 6,
-      name: "Ahmad Khan",
+      name: "Muhammad Ahmad Sadaqat",
       role: "CEO, Nxore",
       company: "Nxore",
       rating: 5,
       text: "Ahmad is a brilliant developer who understands both technical excellence and business needs. He helped establish Nxore's online presence with a stunning, functional platform. His full-stack expertise and commitment to quality are unmatched.",
-      image: "/ahmad2.png",
+      image: "/4.jpg",
       gradient: "from-emerald-500 to-teal-600",
     },
   ];

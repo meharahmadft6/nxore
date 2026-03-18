@@ -163,31 +163,34 @@ export default function About() {
 
   return (
     <>
-      {/* Enhanced SEO Meta Tags with Ahmad Khan focus */}
+      {/* Enhanced SEO Meta Tags with Muhammad Ahmad Sadaqat focus */}
       <div style={{ display: "none" }}>
-        <h1>About Nxore - Led by Ahmad Khan | Digital Solutions Company</h1>
+        <h1>
+          About Nxore - Led by Muhammad Ahmad Sadaqat | Digital Solutions
+          Company
+        </h1>
         <meta
           name="description"
-          content="Nxore is a leading digital solutions company founded and led by Ahmad Khan. We specialize in web development, mobile apps, and video production with 3+ years of expertise in MERN stack, cloud solutions, and digital transformation."
+          content="Nxore is a leading digital solutions company founded and led by Muhammad Ahmad Sadaqat. We specialize in web development, mobile apps, and video production with 3+ years of expertise in MERN stack, cloud solutions, and digital transformation."
         />
         <meta
           name="keywords"
-          content="Ahmad Khan, Nxore, digital solutions, web development, mobile apps, MERN stack, full-stack developer, cloud solutions, SaaS development, project management, video editing, Ahmad Khan, Salman"
+          content="Muhammad Ahmad Sadaqat, Nxore, digital solutions, web development, mobile apps, MERN stack, full-stack developer, cloud solutions, SaaS development, project management, video editing, Muhammad Ahmad Sadaqat, Salman"
         />
-        <meta name="author" content="Ahmad Khan" />
+        <meta name="author" content="Muhammad Ahmad Sadaqat" />
         <meta
           property="og:title"
-          content="Ahmad Khan - Founder & Lead Engineer at Nxore"
+          content="Muhammad Ahmad Sadaqat - Founder & Lead Engineer at Nxore"
         />
         <meta
           property="og:description"
-          content="Meet Ahmad Khan, Founder & CEO of Nxore. Full-stack engineer with 3+ years of experience in MERN stack, mobile apps, and cloud solutions."
+          content="Meet Muhammad Ahmad Sadaqat, Founder & CEO of Nxore. Full-stack engineer with 3+ years of experience in MERN stack, mobile apps, and cloud solutions."
         />
         <meta property="og:type" content="website" />
-        <meta property="article:author" content="Ahmad Khan" />
+        <meta property="article:author" content="Muhammad Ahmad Sadaqat" />
         <meta
           name="twitter:title"
-          content="Ahmad Khan - Digital Solutions Expert"
+          content="Muhammad Ahmad Sadaqat - Digital Solutions Expert"
         />
         <meta
           name="twitter:description"
@@ -203,7 +206,7 @@ export default function About() {
             logo: "https://nxore.com/logo.png",
             founder: {
               "@type": "Person",
-              name: "Ahmad Khan",
+              name: "Muhammad Ahmad Sadaqat",
               jobTitle: "Founder & CEO | Lead Software Engineer",
               url: "https://nxore.com/about",
               sameAs: [
@@ -226,7 +229,7 @@ export default function About() {
             employee: [
               {
                 "@type": "Person",
-                name: "Ahmad Khan",
+                name: "Muhammad Ahmad Sadaqat",
                 jobTitle: "Project Manager",
               },
               {
@@ -248,7 +251,7 @@ export default function About() {
           {JSON.stringify({
             "@context": "https://schema.org",
             "@type": "Person",
-            name: "Ahmad Khan",
+            name: "Muhammad Ahmad Sadaqat",
             url: "https://nxore.com/about",
             image: "https://nxore.com/pfp.jpg",
             jobTitle: "Founder & CEO | Lead Software Engineer",
@@ -312,7 +315,7 @@ export default function About() {
                 <p className="text-xl sm:text-2xl text-gray-600 max-w-4xl mx-auto leading-relaxed mb-12 animate-fade-in-up animation-delay-200">
                   Led by{" "}
                   <span className="text-blue-600 font-semibold">
-                    Ahmad Khan
+                    Muhammad Ahmad Sadaqat
                   </span>
                   , we are a passionate team of digital innovators dedicated to
                   transforming businesses through{" "}
@@ -344,7 +347,7 @@ export default function About() {
                     </div>
                   </div>
                   <span className="text-gray-600 font-medium">
-                    Expert Team Led by Ahmad Khan
+                    Expert Team Led by Muhammad Ahmad Sadaqat
                   </span>
                   <ChevronDown className="w-5 h-5 text-gray-400 animate-bounce" />
                 </div>
@@ -361,9 +364,9 @@ export default function About() {
                 Our Vision & Mission
               </h2>
               <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-                Driven by the leadership of <strong>Ahmad Khan</strong>, we are
-                committed to excellence in digital innovation and client
-                success.
+                Driven by the leadership of{" "}
+                <strong>Muhammad Ahmad Sadaqat</strong>, we are committed to
+                excellence in digital innovation and client success.
               </p>
             </div>
 
@@ -397,10 +400,10 @@ export default function About() {
                         Our Mission
                       </h3>
                       <p className="text-lg text-gray-600 mb-6 leading-relaxed">
-                        Founded by <strong>Ahmad Khan</strong>, our mission is
-                        to empower businesses with innovative digital solutions
-                        that drive growth, enhance user experiences, and create
-                        lasting impact in the digital landscape.
+                        Founded by <strong>Muhammad Ahmad Sadaqat</strong>, our
+                        mission is to empower businesses with innovative digital
+                        solutions that drive growth, enhance user experiences,
+                        and create lasting impact in the digital landscape.
                       </p>
                       <p className="text-lg text-gray-600 leading-relaxed">
                         We leverage cutting-edge technologies including MERN
@@ -418,8 +421,9 @@ export default function About() {
                             Technical Excellence
                           </h4>
                           <p className="text-lg leading-relaxed">
-                            Led by Ahmad Khan, we deliver world-class MERN stack
-                            solutions, mobile apps, and cloud architectures.
+                            Led by Muhammad Ahmad Sadaqat, we deliver
+                            world-class MERN stack solutions, mobile apps, and
+                            cloud architectures.
                           </p>
                         </div>
                       </div>
@@ -435,10 +439,11 @@ export default function About() {
                         Our Vision
                       </h3>
                       <p className="text-lg text-gray-600 mb-6 leading-relaxed">
-                        Under the leadership of <strong>Ahmad Khan</strong>, we
-                        aim to be the leading digital partner for businesses
-                        worldwide, known for our innovative solutions,
-                        exceptional service, and commitment to client success.
+                        Under the leadership of{" "}
+                        <strong>Muhammad Ahmad Sadaqat</strong>, we aim to be
+                        the leading digital partner for businesses worldwide,
+                        known for our innovative solutions, exceptional service,
+                        and commitment to client success.
                       </p>
                       <p className="text-lg text-gray-600 leading-relaxed">
                         We envision a future where technology seamlessly
@@ -456,9 +461,9 @@ export default function About() {
                             Founder&apos;s Vision
                           </h4>
                           <p className="text-lg leading-relaxed">
-                            Ahmad Khan&apos;s vision: Democratizing access to
-                            premium digital solutions for businesses of all
-                            sizes.
+                            Muhammad Ahmad Sadaqat&apos;s vision: Democratizing
+                            access to premium digital solutions for businesses
+                            of all sizes.
                           </p>
                         </div>
                       </div>
@@ -503,8 +508,8 @@ export default function About() {
                 Our Impact & Achievements
               </h2>
               <p className="text-xl text-gray-600">
-                Led by <strong>Ahmad Khan</strong>, we&apos;ve delivered
-                exceptional results across 50+ projects
+                Led by <strong>Muhammad Ahmad Sadaqat</strong>, we&apos;ve
+                delivered exceptional results across 50+ projects
               </p>
             </div>
 
@@ -538,7 +543,7 @@ export default function About() {
             <div className="mt-12 bg-white rounded-2xl p-8 shadow-lg">
               <div className="text-center mb-6">
                 <h3 className="text-2xl font-bold text-gray-900 mb-2">
-                  Ahmad Khan&apos;s Personal Metrics
+                  Muhammad Ahmad Sadaqat&apos;s Personal Metrics
                 </h3>
                 <p className="text-gray-600">
                   Direct contributions to our success
@@ -589,7 +594,7 @@ export default function About() {
         <section className="py-20 bg-gradient-to-r from-blue-600 to-purple-600">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
             <h2 className="text-4xl font-bold text-white mb-6">
-              Work Directly with Ahmad Khan
+              Work Directly with Muhammad Ahmad Sadaqat
             </h2>
             <p className="text-xl text-blue-100 mb-8 max-w-3xl mx-auto">
               Get personalized attention from our founder and lead engineer.
@@ -602,7 +607,7 @@ export default function About() {
                 href="mailto:ahmadkhan48646@gmail.com"
                 className="bg-white text-blue-600 px-8 py-4 rounded-full font-semibold hover:bg-blue-50 transition-colors duration-300 shadow-lg"
               >
-                Email Ahmad Khan
+                Email Muhammad Ahmad Sadaqat
               </a>
               <a
                 href="/contact"
@@ -613,8 +618,8 @@ export default function About() {
             </div>
             <div className="mt-6 text-blue-100 text-sm">
               <p>
-                Founder&apos;s Direct Line: Connect with Ahmad Khan for premium
-                digital solutions
+                Founder&apos;s Direct Line: Connect with Muhammad Ahmad Sadaqat
+                for premium digital solutions
               </p>
             </div>
           </div>
@@ -622,15 +627,15 @@ export default function About() {
 
         {/* Additional SEO Content (Hidden but crawlable) */}
         <div style={{ display: "none" }}>
-          <h2>Ahmad Khan - Digital Solutions Expert</h2>
+          <h2>Muhammad Ahmad Sadaqat - Digital Solutions Expert</h2>
           <p>
-            Ahmad Khan is the founder and lead software engineer at Nxore,
-            specializing in MERN stack development, mobile applications, and
-            cloud solutions. With over 3 years of hands-on experience, he leads
-            a team of experts delivering premium digital solutions to businesses
-            worldwide.
+            Muhammad Ahmad Sadaqat is the founder and lead software engineer at
+            Nxore, specializing in MERN stack development, mobile applications,
+            and cloud solutions. With over 3 years of hands-on experience, he
+            leads a team of experts delivering premium digital solutions to
+            businesses worldwide.
           </p>
-          <h3>Technical Expertise of Ahmad Khan</h3>
+          <h3>Technical Expertise of Muhammad Ahmad Sadaqat</h3>
           <ul>
             <li>MERN Stack Development (MongoDB, Express, React, Node.js)</li>
             <li>React Native Mobile App Development</li>
@@ -641,19 +646,19 @@ export default function About() {
             <li>API Development & Integration</li>
             <li>Database Design & Optimization</li>
           </ul>
-          <h3>Nxore Services Under Ahmad Khan&apos;s Leadership</h3>
+          <h3>Nxore Services Under Muhammad Ahmad Sadaqat&apos;s Leadership</h3>
           <p>
-            Nxore, led by Ahmad Khan, provides comprehensive digital solutions
-            including custom web applications, mobile apps, e-commerce
+            Nxore, led by Muhammad Ahmad Sadaqat, provides comprehensive digital
+            solutions including custom web applications, mobile apps, e-commerce
             platforms, cloud solutions, and technical consulting. Our team
             combines technical excellence with creative problem-solving to
             deliver outstanding results.
           </p>
-          <h3>Contact Ahmad Khan</h3>
+          <h3>Contact Muhammad Ahmad Sadaqat</h3>
           <p>
-            For premium digital solutions, contact Ahmad Khan directly at
-            ahmadkhan48646@gmail.com or through our contact form. Get expert
-            guidance on your next digital project.
+            For premium digital solutions, contact Muhammad Ahmad Sadaqat
+            directly at ahmadkhan48646@gmail.com or through our contact form.
+            Get expert guidance on your next digital project.
           </p>
         </div>
 
