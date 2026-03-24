@@ -97,8 +97,8 @@ export default function Home() {
         <main role="main">
           <Hero />
           <Services />
-          <TeamSection />
           <ProjectsTestimonialsSection />
+          <TeamSection />
         </main>
 
         <footer role="contentinfo">
